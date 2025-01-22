@@ -1,8 +1,14 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FC } from "react";
 
-const links = [
+interface LinkType {
+  name: string;
+  path: string;
+}
+
+const links: LinkType[] = [
   { name: "главная", path: "/" },
   { name: "services", path: "/services" },
   { name: "резюме", path: "/resume" },
@@ -10,7 +16,7 @@ const links = [
   { name: "contact", path: "/contact" },
 ];
 
-export const Nav = () => {
+export const Nav: FC = () => {
   const pathName = usePathname();
   return (
     <nav className="flex gap-8">
