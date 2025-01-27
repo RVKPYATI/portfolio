@@ -26,7 +26,7 @@ const info = [
   },
 ];
 
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
@@ -42,7 +42,7 @@ function Contact() {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:w-[60%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded">
-              <h3 className="text-4xl text-accent">Let's work together!</h3>
+              <h3 className="text-4xl text-accent">Давайте работать вместе</h3>
               <p className="text-white/60">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
                 qui quidem, quo doloribus omnis assumenda, ratione reiciendis
